@@ -1,0 +1,29 @@
+<html>
+<head>
+<title></title>
+<script>
+document.write("Publisher sending the Message :");
+var messageCount = 0;
+var sampleMessages = ["Visit our New product code No.1   : WristWatch","Visit our New product code No.2   : Cricketbat",
+                      "Visit our New product code No.3   : T-Shirt",   "Visit our New product code No.4   : Waterbottle",
+                      "Visit our New product code No.5   : KeyChain",  "Visit our New product code No.6   : LunchBag", 
+                      "Visit our New product code No.7   : Mousepad",  "Visit our New product code No.8   : SportsShoe",
+                      "Visit our New product code No.9   : Keyboard",  "Visit our New product code No.10  : Bracelet"];
+window.setTimeout(function () 
+{
+  debugger;//stop the execution or breakpoint
+  setInterval(function ()
+  {
+    debugger;
+    if (messageCount <= 9)
+    {   
+        //send the message and set the date and time
+    	document.write(sampleMessages[messageCount] +" (Sent at :"+ new Date().toLocaleString() + ")<br>");
+       messageCount++;
+    }
+  }, 5000);//intervel of 5 seconds each message send
+}, 5000);
+</script>
+</head>
+<body></body>
+</html>
